@@ -1,11 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 import os
+import sys
 from multiprocessing import Pool
-# Replace with the URL that has the directory listing for the ebooks
-base_url= "http://www.digitaldreamart.com/storage/books/"
-# Replace with the path where you would like to store the downloaded ebooks
-directory = "/Users/prateek/Ebooks/"
 
 class Book:
 
@@ -30,6 +27,10 @@ def downloadBook(book):
 
 
 if __name__ == '__main__':
+    if len(sys.argv) != 3:
+        print "Error: The script needs 2 arguments - URL/link for the book listing, local path for saving the downloaded books"
+        exit()
+    script, base_url, directory = sys.argv
     r = requests.get(base_url)
     soup = BeautifulSoup(r.text,"html.parser")
     list = soup.find('ul')
