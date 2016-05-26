@@ -10,6 +10,9 @@ Here are some of the listing sites I came across:
 1. http://www.digitaldreamart.com/storage/books/
 2. http://inzania.com/temp/kindle/books/
 
+
+Seems like the second URL is down and the books have been removed. All the more reason why you need this utility. Download them all before they are brought down :)
+
 USAGE
 book_downloader.py [url] [directory]
 eg.
