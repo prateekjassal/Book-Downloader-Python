@@ -9,3 +9,8 @@ Here are some of the listing sites I came across:
 
 1. http://www.digitaldreamart.com/storage/books/
 2. http://inzania.com/temp/kindle/books/
+
+USAGE
+book_downloader.py [url] [directory]
+eg.
+book_downloader.py http://www.digitaldreamart.com/storage/books/ /Users/prateek/Ebooks/
